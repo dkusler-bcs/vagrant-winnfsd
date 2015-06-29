@@ -47,6 +47,9 @@ Gem::Specification.new do |gem|
           File.fnmatch(ignore, File.basename(file), File::FNM_PATHNAME)
     end
   end
+  
+  gem.add_dependency 'ffi', '= 1.9.8'
+  gem.add_development_dependency 'rake', '~> 10.3.2'
 
   gem.files        = unignored_files
   gem.require_path = 'lib'
